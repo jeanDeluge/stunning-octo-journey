@@ -2,7 +2,7 @@ import Koa from 'koa'
 import bodyParser from 'koa-bodyparser'
 import cors from '@koa/cors'
 import router from './router'
-import jwt from 'jsonwebtoken'
+import jwt from 'koa-jwt'
 
 const app = new Koa()
 export const host = process.env.HOST || '127.0.0.1'
